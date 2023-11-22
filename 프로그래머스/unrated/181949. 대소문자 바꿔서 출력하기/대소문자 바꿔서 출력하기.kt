@@ -1,8 +1,7 @@
 fun main(args: Array<String>) {
     val s1 = readLine()!!
+    val result = s1.map { it -> if (it.isUpperCase()) it.toLowerCase() else it.toUpperCase() }
+            .joinToString("")
     
-    for (s in s1) {
-        val str = if (s.isUpperCase()) s.toLowerCase() else s.toUpperCase()
-        print(str)
-    }
+    print(result)
 }
