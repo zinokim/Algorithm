@@ -1,11 +1,5 @@
 class Solution {
     fun solution(str1: String, str2: String): String {
-        var answer: String = ""
-        
-        for (i in str1.indices) {
-            answer += "${str1[i]}${str2[i]}"
-        }
-        
-        return answer
+        return str1.zip(str2).joinToString("") { (a, b) -> "$a$b" }
     }
 }
