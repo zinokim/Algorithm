@@ -4,28 +4,19 @@ class Solution {
         var mode: Int = 0
         
         for (i in code.indices) {
-            if (mode == 0) {
-                if (code[i].toString() == "1") {
-                    mode = 1
-                    continue
-                }
-                
-                if (i % 2 == 0) {
-                    answer += code[i]
-                    continue
-                }
+            if (code[i].toString() == "1") {
+                mode = if (mode == 0) 1 else 0
+                continue
+             }
+            
+            if (mode == 0 && i % 2 == 0) {
+                answer += code[i]
+                continue
             }
             
-            if (mode == 1) {
-                if (code[i].toString() == "1") {
-                    mode = 0
-                    continue
-                }
-                
-                if (i % 2 == 1) {
-                    answer += code[i]
-                    continue
-                }
+            if (mode == 1 && i % 2 == 1) {
+                answer += code[i]
+                continue
             }
         }
         
