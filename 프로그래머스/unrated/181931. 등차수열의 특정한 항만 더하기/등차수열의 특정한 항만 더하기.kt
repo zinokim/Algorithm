@@ -1,8 +1,5 @@
 class Solution {
     fun solution(a: Int, d: Int, included: BooleanArray): Int {
-        return included.mapIndexed { 
-            index, value -> if (value) (a + (d * index)) else 0 
-        }
-        .sum()
+        return included.indices.filter { included[it] }.sumOf { a + (d * it) }
     }
 }
