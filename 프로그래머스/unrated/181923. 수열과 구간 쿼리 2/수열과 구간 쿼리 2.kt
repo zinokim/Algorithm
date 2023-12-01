@@ -13,8 +13,7 @@ class Solution {
                 }
             }
             
-            val result = temp.filter { it -> query[2] < it }.minOrNull()
-            answer += if (result != null) result else -1
+            answer += temp.filter { it -> query[2] < it }.minOrNull() ?: -1
         }
         
         return answer
