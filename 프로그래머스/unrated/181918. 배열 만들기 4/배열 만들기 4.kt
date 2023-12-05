@@ -10,7 +10,7 @@ class Solution {
             } else if (stk[stk.lastIndex] < arr[i]) {
                 stk += arr[i++]
             } else {
-                stk = stk.copyOfRange(0, stk.lastIndex)
+                stk = stk.dropLast(1).toIntArray()
             }
         }
         
