@@ -4,12 +4,12 @@ class Solution {
         
         for (number in numbers) {
             answer += number
-            
+
             if (answer > n) {
                 return answer
             }
         }
-        
+
         return answer
     }
 }
