@@ -1,15 +1,5 @@
 class Solution {
     fun solution(strArr: Array<String>): Array<String> {
-        var answer: Array<String> = arrayOf<String>()
-
-        for(i in 0 until strArr.size) {
-            val index = strArr[i].indexOf("ad")
-
-            if (index == -1) {
-                answer = answer.plus(strArr[i])
-            }
-        }
-
-        return answer
+        return strArr.filter { !it.contains("ad") }.toTypedArray()
     }
 }
