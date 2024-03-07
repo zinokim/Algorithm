@@ -1,10 +1,10 @@
 # [level 0] 공백으로 구분하기 2 - 181868 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181868#qna) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181868) 
 
 ### 성능 요약
 
-메모리: 62.5 MB, 시간: 11.85 ms
+메모리: 63.1 MB, 시간: 15.53 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 03월 07일 22:55:01
+2024년 03월 07일 22:56:48
 
 ### 문제 설명
 
